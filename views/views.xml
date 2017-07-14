@@ -1,0 +1,59 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="geselle-wunsch.list">
+      <field name="name">geselle-wunsch list</field>
+      <field name="model">geselle-wunsch.geselle-wunsch</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="geselle-wunsch.action_window">
+      <field name="name">geselle-wunsch window</field>
+      <field name="res_model">geselle-wunsch.geselle-wunsch</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="geselle-wunsch.action_server">
+      <field name="name">geselle-wunsch server</field>
+      <field name="model_id" ref="model_geselle-wunsch_geselle-wunsch"/>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="geselle-wunsch" id="geselle-wunsch.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="geselle-wunsch.menu_1" parent="geselle-wunsch.menu_root"/>
+    <menuitem name="Menu 2" id="geselle-wunsch.menu_2" parent="geselle-wunsch.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="geselle-wunsch.menu_1_list" parent="geselle-wunsch.menu_1"
+              action="geselle-wunsch.action_window"/>
+    <menuitem name="Server to list" id="geselle-wunsch" parent="geselle-wunsch.menu_2"
+              action="geselle-wunsch.action_server"/>
+    -->
+  </data>
+</odoo>
